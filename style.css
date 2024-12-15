@@ -111,3 +111,14 @@ p {
 .formspreelink:active {
     color: gray;
 }
+
+.pagenotfound {
+    font-size: 300px;
+    color: #ff6815;
+}
+
+.pagenotfoundsubtext {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Quicksand';
+}
