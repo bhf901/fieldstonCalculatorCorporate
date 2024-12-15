@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="full_logo-no-background.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <title>Fieldston Calculator, Inc.</title>
+    </head>
+    <body>
+        <div class="menubar">
+            <a href="index.html"><img src="full_logo-no-background.png" width="100.8" height="92.8"></a>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.fieldstoncalculator.com">Products</a>
+<!--            <a href="https://www.fieldstoncalculator.com">Fieldston Calculator</a>-->
+        </div>
+        <h1>The most intuitive calculator you'll use. Ever.</h1>
+        <p>Fieldston Calculator is here for all your calculation needs, from basic arithmetic to AP Calculus.</p>
+        <div class="about" id="about">
+            <h2>About Us</h2>
+            <p>Fieldston Calculator is the HTML and CSS practice project of a student who currently attends the Ethical Culture Fieldston School in New York, NY. The idea was born when the student wanted a more efficient way to calcualte his grade. It was difficult to keep in mind all the numbers, all the grades he'd received, how much of his grade each one was worth, and then put them all into a caluclator, only to mess it up and have to try again. So, he thought of a better solution: what if there was a grade calculator that would do all this for you? Not the confusing, ad-riddled ones online, but a clean, easy-to-use one with a nice interface? And so, instead of waiting around fora  calculator like this to pop up, he set out and programmed his own. And on that day, in Fall 2024, the Fieldston Grade Calculator was born. As the user base expanded, so did the products, and the website now features an extensive set of features. We would like to thank you for taking the time to visit our website and support us. You've made the right choice, as we are the only calculator application on the internet that is completely lightweight and ad-free.</p>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contact Us!</h2>
+            <form action="https://formspree.io/f/xnnqkagv" method="POST">
+                <input class="contactform" type="text" name="name" placeholder="Name" required><br>
+                <input class="contactform" type="text" name="email" placeholder="Email" required><br>
+                <input class="contactform" type="text" name="subject" placeholder="Subject" required><br>
+                <textarea id="contactform" class="contactform" name="message" placeholder="Write your message here..." required></textarea><br>
+                <button class="submitform" type="submit">Send</button>
+            </form>
+            <p>To protect your data, the form will be submitted through <a class="formspreelink" href="https://www.formspree.io">Formspree</a>.</p>
+        </div>
+    </body>
+    <script>
+        const textarea = document.getElementById('contactform');
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    </script>
+</html>
